@@ -1,0 +1,9 @@
+# baroview-cdn
+
+## 0.1.1
+
+### Patch Changes
+
+- d77a24e: chore: release workflow and changesets setup
+- Updated dependencies [d77a24e]
+  - baroview-core@0.1.1

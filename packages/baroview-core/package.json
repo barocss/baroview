@@ -1,6 +1,6 @@
 {
   "name": "baroview-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core logic for baroview – no marked/pdf.js; use baroview or baroview-cdn for full features",
   "type": "module",
   "main": "./src/index.ts",
@@ -25,7 +25,9 @@
       "default": "./src/pdf-renderer.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "main": "./dist/baroview-core.umd.cjs",
     "module": "./dist/baroview-core.js",
@@ -48,7 +50,9 @@
         "default": "./dist/pdf-renderer.js"
       }
     },
-    "files": ["dist"]
+    "files": [
+      "dist"
+    ]
   },
   "scripts": {
     "build": "vite build && vite build --config vite.markdown-renderer.config.ts && vite build --config vite.pdf-renderer.config.ts && tsc"
