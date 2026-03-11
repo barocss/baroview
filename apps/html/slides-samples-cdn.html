@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slides samples (CDN) – baroview</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; padding: 1rem; background: #1a1a1a; color: #eee; }
+    h1 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .intro { font-size: 0.875rem; color: #999; margin-bottom: 1rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+    a { color: #6af; }
+    baro-view { display: block; width: 100%; height: 420px; border: 1px solid #444; border-radius: 8px; overflow: hidden; background: #222; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Slides samples (CDN)</h1>
+  <p class="intro">Same samples using <code>baroview-cdn.js</code> (marked + pdf.js from esm.sh).</p>
+  <p><a href="/slides-samples.html">← ESM samples</a> · <a href="/">Home</a></p>
+  <ul>
+    <li><a href="slides-test-cdn.html">slides-test-cdn.html</a> – Basic + vertical, 12 slides, dots</li>
+    <li><a href="slides-fraction-cdn.html">slides-fraction-cdn.html</a> – Pagination: fraction (n / total)</li>
+    <li><a href="slides-progress-cdn.html">slides-progress-cdn.html</a> – Pagination: progress bar</li>
+    <li><a href="slides-deeplink-cdn.html">slides-deeplink-cdn.html</a> – Deep link (#slide=N)</li>
+    <li><a href="slides-loop-cdn.html">slides-loop-cdn.html</a> – Loop at start/end</li>
+    <li><a href="slides-transition-cdn.html">slides-transition-cdn.html</a> – Fade / slide transition</li>
+    <li><a href="slides-from-markdown-cdn.html">slides-from-markdown-cdn.html</a> – One MD URL split by H1</li>
+    <li><a href="slides-inline-content-cdn.html">slides-inline-content-cdn.html</a> – baro-view-item with pre/code</li>
+  </ul>
+  <script type="module" src="/baroview-cdn.js"></script>
+</body>
+</html>

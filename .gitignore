@@ -1,0 +1,9 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+# Draft docs (not for version control)
+docs/brainstorms
+docs/brainstormings
+docs/plans

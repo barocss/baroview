@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>baroview dev</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; }
+    baro-view { display: block; margin: 1rem 0; border: 1px solid #ddd; border-radius: 8px; min-height: 200px; width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>baroview (library dev)</h1>
+  <baro-view url="/demo.svg"></baro-view>
+  <baro-view urls="/demo.svg /demo.md" layout="grid" columns="2"></baro-view>
+  <script type="module" src="/src/index.ts"></script>
+</body>
+</html>

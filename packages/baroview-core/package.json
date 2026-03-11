@@ -1,0 +1,60 @@
+{
+  "name": "baroview-core",
+  "version": "0.1.0",
+  "description": "Core logic for baroview – no marked/pdf.js; use baroview or baroview-cdn for full features",
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "import": "./src/index.ts",
+      "require": "./dist/baroview-core.umd.cjs",
+      "default": "./src/index.ts"
+    },
+    "./markdown-renderer": {
+      "types": "./src/markdown-renderer.ts",
+      "import": "./src/markdown-renderer.ts",
+      "default": "./src/markdown-renderer.ts"
+    },
+    "./pdf-renderer": {
+      "types": "./src/pdf-renderer.ts",
+      "import": "./src/pdf-renderer.ts",
+      "default": "./src/pdf-renderer.ts"
+    }
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "main": "./dist/baroview-core.umd.cjs",
+    "module": "./dist/baroview-core.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/baroview-core.js",
+        "require": "./dist/baroview-core.umd.cjs",
+        "default": "./dist/baroview-core.js"
+      },
+      "./markdown-renderer": {
+        "types": "./dist/markdown-renderer.d.ts",
+        "import": "./dist/markdown-renderer.js",
+        "default": "./dist/markdown-renderer.js"
+      },
+      "./pdf-renderer": {
+        "types": "./dist/pdf-renderer.d.ts",
+        "import": "./dist/pdf-renderer.js",
+        "default": "./dist/pdf-renderer.js"
+      }
+    },
+    "files": ["dist"]
+  },
+  "scripts": {
+    "build": "vite build && vite build --config vite.markdown-renderer.config.ts && vite build --config vite.pdf-renderer.config.ts && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  }
+}

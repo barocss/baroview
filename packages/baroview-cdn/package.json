@@ -1,0 +1,26 @@
+{
+  "name": "baroview-cdn",
+  "version": "0.1.0",
+  "description": "baroview as a single script; loads marked from CDN (esm.sh)",
+  "type": "module",
+  "main": "./dist/baroview-cdn.js",
+  "module": "./dist/baroview-cdn.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/baroview-cdn.js",
+      "default": "./dist/baroview-cdn.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "baroview-core": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

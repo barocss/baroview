@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slides: inline pre/code – baroview</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; padding: 1rem; background: #1a1a1a; color: #eee; }
+    h1 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .intro { font-size: 0.875rem; color: #999; margin-bottom: 1rem; }
+    baro-view { display: block; width: 100%; height: 420px; border: 1px solid #444; border-radius: 8px; overflow: hidden; background: #222; }
+  </style>
+</head>
+<body>
+  <h1>Slides: inline pre / code</h1>
+  <p class="intro">baro-view-item with &lt;pre&gt; or &lt;code&gt;&lt;pre&gt; as content (no URL).</p>
+  <baro-view layout="gallery" gallery-style="slides" slides-height="380" slides-pagination="fraction">
+    <baro-view-item>
+      <pre>Plain text slide.
+No URL – inline content.</pre>
+    </baro-view-item>
+    <baro-view-item>
+      <code><pre>const x = 1;
+console.log(x);</pre></code>
+    </baro-view-item>
+    <baro-view-item url="/demo.svg"></baro-view-item>
+  </baro-view>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

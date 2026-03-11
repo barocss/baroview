@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>baroview – CDN build</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; max-width: 800px; margin: 0 auto; }
+    baro-view { display: block; margin: 1rem 0; border: 1px solid #ddd; border-radius: 8px; min-height: 240px; }
+  </style>
+</head>
+<body>
+  <h1>baroview-cdn</h1>
+  <p>Single script; <code>marked</code> and <code>pdf.js</code> are loaded from esm.sh at runtime. No bundler.</p>
+  <p><a href="/">← Back to HTML app</a> · <a href="/slides-samples-cdn.html">Slides samples (CDN)</a></p>
+  <baro-view url="/demo.svg"></baro-view>
+  <baro-view url="/demo.md"></baro-view>
+  <baro-view url="/demo.pdf"></baro-view>
+  <baro-view urls="/demo.svg /demo.md /demo.pdf" layout="grid" columns="3"></baro-view>
+  <script type="module" src="/baroview-cdn.js"></script>
+</body>
+</html>

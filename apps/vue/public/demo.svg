@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <rect width="320" height="160" fill="#396"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24" font-family="system-ui,sans-serif">baroview</text>
+  <text x="50%" y="68%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="14">/demo.svg (URL)</text>
+</svg>
