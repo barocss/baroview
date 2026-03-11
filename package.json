@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "pnpm --filter baroview-core build && pnpm --filter baroview build && pnpm --filter baroview-cdn build && cp packages/baroview-cdn/dist/baroview-cdn.js apps/html/public/baroview-cdn.js",
+    "build:packages": "pnpm --filter baroview-core build && pnpm --filter baroview build && pnpm --filter baroview-cdn build",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "pnpm build && changeset publish",
